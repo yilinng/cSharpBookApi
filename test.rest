@@ -1,0 +1,52 @@
+GET https://localhost:5001/api/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjcyNTI1ZjA0NWI4ZGY3MmZlZjM4YiIsIm5iZiI6MTc0MDA1NzY1MSwiZXhwIjoxNzQwNjYyNDUxLCJpYXQiOjE3NDAwNTc2NTF9.J3mvL3me_oiWWbqRhCYD3gS7Lc0REnEPfYks1AYHIMM
+###
+POST https://localhost:5001/api/books
+Content-Type: application/json
+
+{
+  "Name": "How Children Succeed: Grit, Curiosity, and the Hidden Power of Character (Hardcover)",
+  "Price": 200,
+  "Category": "education",
+  "Author": "Paul Tough"
+}
+
+###
+GET https://localhost:5001/api/books/67b3f4dabd3264bf50aad369
+###
+PUT https://localhost:5001/api/books/67b3f4dabd3264bf50aad369
+Content-Type: application/json
+
+{
+  "Name": "Pedagogy of the Oppressed (Paperback)",
+  "Price": 120,
+  "Category": "education",
+  "Author": "Paulo Freire"
+}
+
+###
+DELETE https://localhost:5001/api/books/67b3f4dabd3264bf50aad369
+
+
+
+###
+POST https://localhost:5001/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "test12",
+  "email":"test12@test.com",
+  "password": "test12"
+}
+
+###
+POST https://localhost:5001/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "test12",
+  "password": "test12"
+}
+###
+GET https://localhost:5001/api/auth/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjcyNTI1ZjA0NWI4ZGY3MmZlZjM4YiIsIm5iZiI6MTc0MDA1NzY1MSwiZXhwIjoxNzQwNjYyNDUxLCJpYXQiOjE3NDAwNTc2NTF9.J3mvL3me_oiWWbqRhCYD3gS7Lc0REnEPfYks1AYHIMM
