@@ -1,4 +1,7 @@
+## ASP.NET Core MVC api with mongodb
+
 ## how to start a mongodb shell in docker-container
+
 //https://stackoverflow.com/questions/32944729/how-to-start-a-mongodb-shell-in-docker-container
 docker pull mongo
 docker run --name CONTAINERNAME --restart=always -d -p 8080:8080 mongo mongod --auth
@@ -18,3 +21,17 @@ https://jasonwatmore.com/post/2021/04/30/net-5-jwt-authentication-tutorial-with-
 https://medium.com/@KumarHalder/token-based-authentication-in-asp-net-core-43e99aee0593
 
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-3.1&tabs=visual-studio
+
+https://learn.microsoft.com/en-us/aspnet/core/security/authorization/secure-data?view=aspnetcore-3.1
+
+https://andrewlock.net/exploring-the-dotnet-8-preview-introducing-the-identity-api-endpoints/
+
+## asp net core app
+
+dotnet run watch
+
+## create aspnet mvc app by cli
+
+https://davidgiard.com/using-the-net-cli-to-create-an-aspnet-mvc-application
+
+dotnet new mvc -o of project>
